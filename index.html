@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex timer</title>
+</head>
+
+
+<body>
+    <div id="centerPart"></div>
+    <div id="time"></div>
+    <input type="number" id="timerInput" placeholder="Zadejte čas v sekundách">
+    <button id="startButton" onclick="startTimer()">Start</button>
+    <button id="cancelButton" onclick="cancelTimer()">Zrušit timer</button>
+
+</body>
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+
+    }
+    #centerPart {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+</style>
+    <script src="./script.js"></script>
+</html>
