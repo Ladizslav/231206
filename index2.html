@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex interactable timer</title>
+</head>
+
+<body>
+    <a href="index.html" id="linkToIndex" class="index">Přejít na Index</a>
+    <div class="center">
+        <div id="time"></div>
+    <input type="number" id="timerInput" placeholder="Zadejte čas v sekundách">
+    <button id="startButton" onclick="startTimer()">Start</button>
+    <button id="cancelButton" onclick="cancelTimer()">Zrušit timer</button>
+</div>
+</body>
+<style>
+    .index{
+        color: blue;
+    }
+    .center{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3em;
+    }
+ </style>
+<script src="./script2.js"></script>
+</html>
